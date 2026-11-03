@@ -1,4 +1,6 @@
 # Arcade-machine
+<img src ="Image/arcade-machine.jpeg" align ="left" size = "50%">
+
 This will show the documentation about the method we choice to repair and maintain the actual arcade
 
 ### Description Electronique
