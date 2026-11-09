@@ -1,8 +1,10 @@
 # Arcade-machine
-<img src ="Image/arcade-machine.jpeg" align ="left" size = "50%"/>
+Ceci a pour but de mettre en evidence la documentation des methodes choisies pour reparer l'actuelle Borne d'arcade 
 
-Ceci a pour but de mettre en evidence la documentation des methodes choisies pour reparer l'actuelle   
-Borne d'arcade <br style ='left'>
+<div align = "center">
+<img src ="Image/arcade-machine.jpeg"  width = "400" heigth = "600"/>
+</div>
+
 
 ### Description Electronique
 ---
@@ -82,7 +84,20 @@ en ajouter d'autres on pourra configurer le logiciel. [_comment ajouter un encod
 
 ### *Configuration des touches
 ---
+<div align = "center">
+<img src ="Image/arcade-button.jpeg"  width ="500" height = "230">
+</div>
 
+Comme le montre l'image ci-dessus, les bouttons d'arcade possedent des boutons standard ` X `, `Y`, `A`, `B`, `LR1`, `LR2`, `SELECT`, `START` 
+qui permettent des interactions avec le systeme [consulter conf-manettes snes](https://wiki.recalbox.com/fr/basic-usage/first-use-and-configuration).   
+La Hotkey[^3] est une touche essentielle a definir pour acceder a une panel de commandes rapides lors du game play. [_voir commandes Hotkey_](https://wiki.recalbox.com/fr/basic-usage/getting-started/special-commands)   
 
+> [!NOTE]
+> Ces boutons sont base sur ceux de la SNES[^4] de Nintendo
+
+#### Documentation suplementaire
+le schema de la carte electronique de puissande de la tele panasonic qui sert d'ecran d'affichage, peut etre consulter vers [ce lien](https://www.csportal.panasonic-la.com/descargaspla/PLA/TELEVISION/PLASMA%20TV/50%20PLG/TC-P50X20P/DOCUMENTO/MANUAL%20DE%20SERVICIO/tc_p50x20p.pdf)
 [^1]: Comportement d'un processeur qui bloque lors de l'execution de processus
 [^2]: Logiciel permettant de jouer plusieurs jeux de platformes differente sur une seule
+[^3]: Bouton permettant l'activation de commande speciale dans un emulateur
+[^4]: Super Nintento ES manete de la premiere console nintendo
