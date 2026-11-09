@@ -1,9 +1,6 @@
 # Arcade-machine
-
-Ceci a pour but de mettre en évidence la documentation des méthodes choisies pour réparer l'actuelle borne d'arcade.
-
 <div align = "center">
-<img src ="Image/arcade-machine.jpeg" width = "400" height = "600"/>
+<img src ="Image/arcade-machine.jpeg" width = "400" height = "600">
 </div>
 
 ### Description électronique
@@ -37,8 +34,7 @@ Un diagnostic de la machine a été effectué afin de recenser les composants qu
 Théoriquement, pour une machine d'arcade, une bonne vieille Raspberry ferait l'affaire (les caractéristiques à prendre en compte dépendent des jeux que l'on souhaite faire tourner). Mais, en pratique, on n'est jamais à l'abri d'un freeze[^1], d'une surchauffe, etc. C'est pour cela qu'un PC bien équipé (ventirad, ventilateur, régulateur de tension, etc.) peut s'avérer utile dans ce genre d'entreprise.
 
 > [!NOTE]
-> Dans notre cas, nous allons rester sur un Raspberry Pi 3B+, faute de PC...[_cliquer ici pour plus d'informations sur le modèle_](https://www.raspberrypi.com/documentation/computers/getting-started.[...]
-
+> Dans notre cas, nous allons rester sur un Raspberry Pi 3B+, faute de PC...[_cliquer ici pour plus d'informations sur le modèle_](https://www.raspberrypi.com/documentation/computers/getting-started.html#setup)
 ### Encodeur PS/2
 ---
 
@@ -66,7 +62,10 @@ La Raspberry Pi 3B+ choisie offre des performances largement suffisantes pour fa
 Le système de rétrogaming[^2] Recalbox propose plusieurs paramètres de configuration, notamment dans le fichier `/recalbox/share/system/recalbox.conf`. Le matériel doit également présenter une certaine [compatibilité](https://wiki.recalbox.com/fr/hardware-compatibility) pour que le système fonctionne correctement.
 
 Pour le mappage des touches, le logiciel est compatible avec une certaine [gamme d'encodeurs](https://wiki.recalbox.com/fr/hardware-compatibility/compatible-devices/input). Pour en ajouter d'autres, il est possible de configurer le logiciel. [_Comment ajouter un encodeur USB ?_](https://wiki.recalbox.com/fr/tutorials/controllers/usb-encoders/recalbox-for-your-usb-keyboard-encoder)
-
+> [!WARNING]
+> Mapper une touche permet de lui donner une action pre-implementer dans le systeme (la configurer). Cependant l'encoder c'est attribuer a un signal un caractere.
+> Celui-ci peut etre simulaire au carectere uliliser dans le fichier configurer, ce qui facilite le mappage.
+> Sinon on peut toujours encoder les touches pour quelles soient proches des carateres usuels.
 ### Configuration des touches
 ---
 
@@ -74,16 +73,18 @@ Pour le mappage des touches, le logiciel est compatible avec une certaine [gamme
 <img src ="Image/arcade-button.jpeg" width ="500" height = "230">
 </div>
 
-Comme le montre l'image ci-dessus, les boutons d'arcade possèdent des boutons standard `X`, `Y`, `A`, `B`, `LR1`, `LR2`, `SELECT` et `START`, qui permettent d'interagir avec le système [consulter conf-manettes snes](https://wiki.recalbox.com/fr/basic-usage/first-use-and-configuration).
+Comme le montre l'image ci-dessus, les boutons d'arcade possèdent des boutons standard `X`, `Y`, `A`, `B`, `LR1`, `LR2`, `SELECT` et `START`, qui permettent d'interagir avec le système. [_consulter conf-manettes snes_](https://wiki.recalbox.com/fr/basic-usage/first-use-and-configuration).
 
-La Hotkey[^3] est une touche essentielle à définir pour accéder à un panel de commandes rapides pendant le jeu. [_Voir les commandes Hotkey_](https://wiki.recalbox.com/fr/basic-usage/getting-start[...]
+La Hotkey[^3] est une touche essentielle à définir pour accéder à un panel de commandes rapides pendant le jeu.   
+[_Voir les commandes Hotkey_](https://wiki.recalbox.com/fr/basic-usage/getting-started/special-commands)
 
 > [!NOTE]
 > Ces boutons sont basés sur ceux de la SNES[^4] de Nintendo.
+> Elles peuvent toutes etre definies dans le fichier de configuration du logiciel
 
 #### Documentation supplémentaire
 
-Le schéma de la carte électronique de puissance du téléviseur Panasonic, qui sert d'écran d'affichage, peut être consulté via [ce lien](https://www.csportal.panasonic-la.com/descargaspla/PLA/TELEVIS[...]
+Le schéma de la carte électronique de puissance du téléviseur Panasonic, qui sert d'écran d'affichage, peut être consulté via [ce lien](https://www.csportal.panasonic-la.com/descargaspla/PLA/TELEVISION/PLASMA%20TV/50%20PLG/TC-P50X20P/DOCUMENTO/MANUAL%20DE%20SERVICIO/tc_p50x20p.pdf)
 
 [^1]: Blocage temporaire d'un ordinateur ou d'un processeur pendant l'exécution de processus.
 [^2]: Logiciel permettant de jouer à plusieurs jeux de plateformes différentes sur une seule machine.
